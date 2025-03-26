@@ -1,0 +1,13 @@
+SMAP
+sign_002dup_jsp.java
+JSP
+*S JSP
+*F
++ 0 sign-up.jsp
+sign-up.jsp
+*L
+1,141:44
+142:185,3
+143,136:188
+278:323
+*E

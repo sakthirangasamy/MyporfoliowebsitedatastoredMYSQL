@@ -1,0 +1,251 @@
+<!--
+=========================================================
+* Material Dashboard 2 - v3.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+        <title>
+            Material Dashboard 2 by Creative Tim
+        </title>
+        <!--     Fonts and icons     -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+        <!-- Nucleo Icons -->
+        <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+        <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+        <!-- CSS Files -->
+        <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Nepcha Analytics (nepcha.com) -->
+        <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+        <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body class="g-sidenav-show  bg-gray-200">
+        <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
+            <div class="sidenav-header">
+                <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+                <a class="navbar-brand m-0" href="  " target="_blank">
+                    <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+                    <span class="ms-1 font-weight-bold text-white">Bit Coin Transaction</span>
+                </a>
+            </div>
+            <hr class="horizontal light mt-0 mb-2">
+            <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active bg-gradient-primary" href="../pages/dashboard.html">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="material-icons opacity-10">dashboard</i>
+                            </div>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white " href="../pages/uploaddatset.jsp">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                             <i class="material-icons opacity-10" style=" transform: rotate(90deg);">login</i>
+
+                            </div>
+                            <span class="nav-link-text ms-1">Upload Datasets</span>
+                        </a>
+                    </li>
+
+                     
+          <ul class="nav flex-column">
+        <li class="nav-item dropdown pe-2" id="predictDropdown">
+            <a href="javascript:;" class="nav-link text-white" role="button" id="dropdownMenuButton" aria-expanded="false">
+                <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                    <i class="material-icons opacity-10">assignment</i>
+                </div>
+                <span class="nav-link-text ms-1">Predict the Datasets 
+                    <span id="chevronIcon" class="fa fa-chevron-down"></span>
+                </span>
+            </a>
+            <ul class="nav child_menu" aria-labelledby="dropdownMenuButton" style="margin-left: 40px; font-family: sans-serif; font-size:12px;">
+                <li><a class="dropdown-item text-white" href="../pages/viewalgorithm.jsp">Decision Tree</a></li>
+                <li><a class="dropdown-item text-white" href="../pages/randomforest.jsp">Random Forest Algorithm</a></li>
+                <li><a class="dropdown-item text-white" href="../pages/knn.jsp">KNN</a></li>
+                <li><a class="dropdown-item text-white" href="../pages/naivybayes.jsp">Naive Bayes Algorithm</a></li>
+                <li><a class="dropdown-item text-white" href="../pages/svm.jsp">SVM</a></li>
+            </ul>
+        </li>
+    </ul>
+<!--</div>-->
+
+
+
+
+
+ 
+    <style>
+        body {
+            display: block;
+        }
+
+        aside {
+            width: 250px; /* Width of the aside */
+            padding: 20px; /* Padding around the aside */
+            color: white; /* Text color */
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav.child_menu {
+            display: none; /* Hide dropdown by default */
+            margin-left: 20px; /* Align with parent item */
+            list-style-type: circle;
+        }
+
+        .nav-item.show .child_menu {
+            display: block; /* Show dropdown when parent item is active */
+        }
+
+        .dropdown-item:hover {
+            background-color: #007bff; /* Hover background color */
+        }
+    
+
+                                     
+     .animated-word {
+            font-size: 48px;
+            opacity: -1;
+            transform: translateY(100px);
+            animation: fadeInUp 5s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                color: red;
+                transform: translateY(0px);
+            }
+        }
+
+                                </style>     
+                         <li class="nav-item">
+                        <a class="nav-link text-white " href="../pages/viewuser.jsp">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                 <i class="material-icons opacity-10">table_view</i>
+                            </div>
+                            <span class="nav-link-text ms-1">View All Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="../pages/table.jsp">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="material-icons opacity-10">table_view</i>
+                            </div>
+                            <span class="nav-link-text ms-1">View All Bitcoin Datas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="../pages/barchart.jsp">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="material-icons opacity-10">table_view</i>
+                            </div>
+                            <span class="nav-link-text ms-1">View Datasets In Barchart</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="../pages/piechart.jsp">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="material-icons opacity-10">table_view</i>
+                            </div>
+                            <span class="nav-link-text ms-1">View Datasets in Pie Chart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="../pages/viewfrauddetection.jsp">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="material-icons opacity-10">table_view</i>
+                            </div>
+                            <span class="nav-link-text ms-1">View Fraud Detection Data</span>
+                        </a>
+                    </li>   
+               
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="../index.html">
+                            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                <i class="material-icons opacity-10" style=" transform: rotate(180deg);">login</i>
+                            </div>
+                            <span class="nav-link-text ms-1">Sign Out</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="sidenav-footer position-absolute w-100 bottom-0 ">
+                <div class="mx-3">
+
+                    <a class="btn bg-gradient-primary w-100"></a>
+                </div>
+            </div>
+        </aside>
+    
+
+
+        
+
+ <div class="container-fluid py-4" style="margin-top: 300px;margin-left: 600px;text-align: center;">
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
+            <div class="animated-word" style="position: absolute;text-align: center;color: red; ">
+                <h1>WELCOME ADMIN</h1>
+           </div>
+        </div>
+      </div>
+  
+
+        <!--   Core JS Files   -->
+        <script src="../assets/js/core/popper.min.js"></script>
+        <script src="../assets/js/core/bootstrap.min.js"></script>
+        <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+        <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+        <script src="../assets/js/plugins/chartjs.min.js"></script>
+
+        <!-- Github buttons -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#dropdownMenuButton').on('click', function() {
+            $('#predictDropdown').toggleClass('show'); // Toggle show class
+        });
+    });
+</script>
+    </body>
+
+</html>
